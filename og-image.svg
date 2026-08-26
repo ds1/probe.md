@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0C0C0C"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#D77757"/>
+  <text x="80" y="240" font-family="monospace" font-size="88" font-weight="bold" fill="#F2F2F2">PROBE.md</text>
+  <text x="80" y="320" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="40" fill="#CCCCCC">Pressure-test a decision before you lock it.</text>
+  <text x="80" y="400" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="28" fill="#888888">Six-lens Socratic analysis for Claude Code.</text>
+  <text x="80" y="540" font-family="monospace" font-size="26" fill="#D77757">/probe-start &lt;document&gt; &lt;output-dir&gt;</text>
+</svg>
