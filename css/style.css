@@ -85,6 +85,12 @@ button {
   font-family: var(--font-mono);
 }
 
+.subhead {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
 .tagline {
   color: var(--text-secondary);
   font-size: 1.1rem;
@@ -207,6 +213,10 @@ button {
 .run-section { margin-top: 20px; }
 
 .run-cmd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
@@ -214,11 +224,16 @@ button {
   padding: 16px 20px;
 }
 .run-cmd code {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
   background: none;
   padding: 0;
   font-size: 0.95rem;
   color: var(--text-primary);
+  white-space: nowrap;
 }
+.run-cmd .copy-btn { flex-shrink: 0; }
 
 .run-desc {
   color: var(--text-secondary);

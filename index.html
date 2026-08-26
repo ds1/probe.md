@@ -20,7 +20,8 @@
     <div class="container">
       <div class="header-content">
         <h1 class="logo">PROBE.md</h1>
-        <p class="about">Six-lens Socratic analysis for <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code</a>. Point it at a decision doc, proposal, or research write-up; it runs six critical lenses in parallel and synthesizes an actionable verdict. From <a href="https://github.com/ds1/socratic-probes" target="_blank" rel="noopener">ds1/socratic-probes</a>, by <a href="https://github.com/ds1" target="_blank" rel="noopener">@ds1</a>.</p>
+        <p class="subhead">The Claude skill that examines and sharpens concepts.</p>
+        <p class="about">Six-lens Socratic analysis for <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code</a>. Use Probe to have agents sharpen ideas at any stage, like when your thinking is still raw and messy or after each draft is written. It runs six critical lenses in parallel and synthesizes an actionable verdict. From <a href="https://github.com/ds1/socratic-probes" target="_blank" rel="noopener">ds1/socratic-probes</a>, by <a href="https://github.com/ds1" target="_blank" rel="noopener">@ds1</a>.</p>
         <p class="tagline">Pressure-test a decision before you lock it.</p>
       </div>
       <a href="https://github.com/ds1/socratic-probes" class="github-link" target="_blank" rel="noopener">
@@ -69,7 +70,11 @@
     <!-- Run -->
     <section class="run-section">
       <div class="run-cmd">
-        <code>/probe-start &lt;path-to-document&gt; &lt;output-directory&gt;</code>
+        <code id="run-output">/probe-start &lt;path-to-document&gt; &lt;output-directory&gt;</code>
+        <button class="copy-btn" data-target="run" title="Copy to clipboard">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+          <span class="copy-label">Copy</span>
+        </button>
       </div>
       <p class="run-desc">Six agents read your document, each applies one Socratic lens, and a seventh step consolidates everything into <code>socratic-synthesis.md</code>: an executive verdict, an assumption risk matrix, the alternatives the doc skipped, and a validate-before-proceeding checklist.</p>
     </section>
@@ -121,15 +126,15 @@
     <!-- The loop (depth) -->
     <section class="section" id="loop">
       <h2 class="section-title">The decision-probe loop</h2>
-      <p class="section-lead">The lenses are the engine. The real power is running them as a disciplined loop around a decision you are about to lock. A one-to-two-hour probe is cheap next to the cost of locking a wrong architectural choice and discovering it after you have built on top of it.</p>
+      <p class="section-lead">The lenses are the engine. The real power is running them as a disciplined loop around a decision you are about to lock. Point it at whatever you have, a page of raw notes or a finished proposal. A two-minute probe is cheap next to the cost of locking a wrong architectural choice and discovering it after you have built on top of it.</p>
       <ol class="steps">
         <li class="step">
           <h3 class="step-title">Scan for an existing decision first</h3>
           <p>Search your decision log for the nouns of the capability. If a prior decision already owns the ground, your draft is an amendment to it, not a peer.</p>
         </li>
         <li class="step">
-          <h3 class="step-title">Draft calibrated to now</h3>
-          <p>Lead with what is blocked and how reversible each option is. Anchor every number to its source: measured, estimated, or vendor-cited with a date.</p>
+          <h3 class="step-title">Draft it, or bring raw notes</h3>
+          <p>Have a draft? Lead with what is blocked and how reversible each option is, and anchor every number to its source. Still messy? Point the probe at your rough notes and let it sharpen the thinking before you commit to a shape.</p>
         </li>
         <li class="step">
           <h3 class="step-title">Ground the agents in the code</h3>
