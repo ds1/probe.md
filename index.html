@@ -38,12 +38,24 @@
       <div class="output-header">
         <h2 class="output-title">Install</h2>
         <div class="output-tabs">
-          <button class="output-tab active" data-tab="bash">Bash</button>
+          <button class="output-tab active" data-tab="plugin">Plugin</button>
+          <button class="output-tab" data-tab="bash">Bash</button>
           <button class="output-tab" data-tab="powershell">PowerShell</button>
         </div>
       </div>
       <div class="output-body">
-        <div class="output-content active" id="output-bash">
+        <div class="output-content active" id="output-plugin">
+          <div class="code-toolbar">
+            <span class="code-label">in Claude Code (recommended)</span>
+            <button class="copy-btn" data-target="plugin" title="Copy to clipboard">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+              <span class="copy-label">Copy</span>
+            </button>
+          </div>
+          <pre class="code-block"><code id="plugin-output">/plugin marketplace add ds1/socratic-probes
+/plugin install socratic-probes@probe-md</code></pre>
+        </div>
+        <div class="output-content" id="output-bash">
           <div class="code-toolbar">
             <span class="code-label">macOS / Linux / WSL / Git Bash</span>
             <button class="copy-btn" data-target="bash" title="Copy to clipboard">
@@ -64,7 +76,7 @@
           <pre class="code-block"><code id="powershell-output">irm https://raw.githubusercontent.com/ds1/socratic-probes/master/install.ps1 | iex</code></pre>
         </div>
       </div>
-      <p class="install-note">Installs eight slash commands into <code>~/.claude/commands</code>, available in every project. Then open Claude Code and run the command below.</p>
+      <p class="install-note">The plugin gives you versioned, updatable commands, namespaced as <code>/socratic-probes:probe-start</code>. The Bash and PowerShell one-liners instead copy the eight commands into <code>~/.claude/commands</code> with bare names like <code>/probe-start</code>. Either way, run the command below.</p>
     </section>
 
     <!-- Run -->
