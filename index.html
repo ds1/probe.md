@@ -76,13 +76,13 @@
           <pre class="code-block"><code id="powershell-output">irm https://raw.githubusercontent.com/ds1/socratic-probes/master/install.ps1 | iex</code></pre>
         </div>
       </div>
-      <p class="install-note">The plugin gives you versioned, updatable commands. The Bash and PowerShell one-liners copy the same eight commands into <code>~/.claude/commands/probe/</code>. Either way you invoke them as <code>/probe:start</code>, <code>/probe:clarify</code>, and so on. Run the command below.</p>
+      <p class="install-note">The plugin gives you versioned, updatable commands. The Bash and PowerShell one-liners copy the same eight commands into <code>~/.claude/commands/probe/</code>. Either way you invoke them as <code>/probe:go</code>, <code>/probe:clarify</code>, and so on. Run the command below.</p>
     </section>
 
     <!-- Run -->
     <section class="run-section">
       <div class="run-cmd">
-        <code id="run-output">/probe:start &lt;path-to-document&gt; &lt;output-directory&gt;</code>
+        <code id="run-output">/probe:go &lt;input&gt; &lt;output-directory&gt;</code>
         <button class="copy-btn" data-target="run" title="Copy to clipboard">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
           <span class="copy-label">Copy</span>
@@ -176,14 +176,14 @@
       <h2 class="section-title">Every command</h2>
       <p class="section-lead">Run the full probe, or reach for a single lens when you already know what you want to pressure-test.</p>
       <div class="cmd-list">
-        <div class="cmd-row"><code>/probe:start</code><span>Launch all six lenses in parallel and synthesize the findings</span></div>
+        <div class="cmd-row"><code>/probe:go</code><span>Launch all six lenses in parallel and synthesize the findings</span></div>
         <div class="cmd-row"><code>/probe:clarify</code><span>Clarify thinking and trace the origin of ideas</span></div>
         <div class="cmd-row"><code>/probe:assume</code><span>Challenge hidden assumptions</span></div>
         <div class="cmd-row"><code>/probe:evidence</code><span>Examine evidence quality and sources</span></div>
         <div class="cmd-row"><code>/probe:pov</code><span>Explore alternative viewpoints</span></div>
         <div class="cmd-row"><code>/probe:implications</code><span>Trace implications and consequences</span></div>
-        <div class="cmd-row"><code>/probe:qq</code><span>Question the question itself</span></div>
-        <div class="cmd-row"><code>/probe:synthesis</code><span>Synthesize evaluation files you already have</span></div>
+        <div class="cmd-row"><code>/probe:meta</code><span>Question the question itself</span></div>
+        <div class="cmd-row"><code>/probe:synth</code><span>Synthesize evaluation files you already have</span></div>
       </div>
     </section>
 
