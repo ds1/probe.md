@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <rect width="100" height="100" rx="16" fill="#0C0C0C"/>
-  <text x="10" y="72" font-family="monospace" font-size="48" font-weight="bold" fill="#D77757">P.</text>
+  <g fill="#D77757" transform="translate(11.6 2.3) scale(0.8)">
+    <path d="M8 25 C28 21 42 19 54 19 C73 19 88 31 88 46 C88 61 73 74 54 74 L44 74 L40 82 L28 82 L32 64 Q32 62 34 62 L54 62 C65 62 76 55 76 46 C76 37 65 31 54 31 C42 31 28 30 8 30 Z"/>
+    <path d="M27 88 H41 L34 100 Z"/>
+  </g>
 </svg>
