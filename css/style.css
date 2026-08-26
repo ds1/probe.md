@@ -307,60 +307,6 @@ button {
   margin-top: 8px;
 }
 
-/* ── Steps ─────────────────────────────────────────────────────────── */
-.steps {
-  margin-top: 20px;
-  list-style: none;
-  counter-reset: step;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.step {
-  position: relative;
-  counter-increment: step;
-  padding: 16px 16px 16px 56px;
-  border-radius: var(--radius);
-  transition: background var(--transition);
-}
-.step:hover { background: var(--bg-secondary); }
-
-.step::before {
-  content: counter(step);
-  position: absolute;
-  left: 16px;
-  top: 16px;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--accent);
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-}
-
-.step-title { font-size: 0.95rem; font-weight: 600; }
-.step p {
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  margin-top: 4px;
-}
-.step code { color: var(--accent); }
-
-.loop-when {
-  margin-top: 16px;
-  padding: 12px 16px;
-  background: var(--accent-subtle);
-  border-radius: var(--radius);
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-}
-
 /* ── Buttons ───────────────────────────────────────────────────────── */
 .btn-primary {
   display: inline-flex;
@@ -409,25 +355,46 @@ button {
   font-size: 0.85rem;
 }
 
-/* ── Footer ────────────────────────────────────────────────────────── */
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding: 24px 0;
-  margin-top: 64px;
+/* ── Closing CTA ───────────────────────────────────────────────────── */
+.cta-final {
+  margin: 72px 0 40px;
+  padding: 40px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-secondary);
+  text-align: center;
 }
 
-.site-footer .contribute {
+.cta-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.cta-sub {
   color: var(--text-secondary);
-  font-size: 0.85rem;
-  text-align: center;
-  margin-bottom: 12px;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+.cta-sub code { color: var(--accent); }
+
+.cta-box {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  max-width: 520px;
+  margin: 20px auto 0;
+  text-align: left;
 }
 
-.site-footer p {
-  color: var(--text-muted);
-  font-size: 0.8rem;
-  text-align: center;
+.cta-box .code-block {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
+
+.cta-box .copy-btn { flex-shrink: 0; align-self: flex-start; }
 
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media (max-width: 640px) {

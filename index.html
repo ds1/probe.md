@@ -6,7 +6,7 @@
   <title>PROBE.md - Examine and sharpen concepts in Claude Code</title>
   <meta name="description" content="Examine and sharpen a concept from six critical angles in Claude Code. Six lenses run in parallel and synthesize an actionable verdict. Install as a plugin.">
   <meta property="og:title" content="PROBE.md - Examine and sharpen concepts in Claude Code">
-  <meta property="og:description" content="Pressure-test a decision before you lock it. Six critical lenses run in parallel and synthesize into an actionable verdict.">
+  <meta property="og:description" content="Six critical lenses examine and sharpen any idea, from raw notes to a final draft. A Claude Code plugin that installs in two commands.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://probe.md/">
   <meta property="og:image" content="https://probe.md/og-image.svg">
@@ -20,9 +20,9 @@
     <div class="container">
       <div class="header-content">
         <h1 class="logo">PROBE.md</h1>
-        <p class="subhead">The Claude skill that examines and sharpens concepts.</p>
+        <p class="subhead">The Claude Code plugin that examines and sharpens concepts.</p>
         <p class="about">Six-lens critical analysis for <a href="https://docs.anthropic.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code</a>. Use Probe to have agents sharpen ideas at any stage, like when your thinking is still raw and messy or after each draft is written. It runs six critical lenses in parallel and synthesizes an actionable verdict. From <a href="https://github.com/ds1/probe" target="_blank" rel="noopener">ds1/probe</a>, by <a href="https://github.com/ds1" target="_blank" rel="noopener">@ds1</a>.</p>
-        <p class="tagline">Pressure-test a decision before you lock it.</p>
+        <p class="tagline">Find what your idea is missing.</p>
       </div>
       <a href="https://github.com/ds1/probe" class="github-link" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -135,35 +135,6 @@
       </div>
     </section>
 
-    <!-- The loop (depth) -->
-    <section class="section" id="loop">
-      <h2 class="section-title">The decision-probe loop</h2>
-      <p class="section-lead">The lenses are the engine. The real power is running them as a disciplined loop around a decision you are about to lock. Point it at whatever you have, a page of raw notes or a finished proposal. A two-minute probe is cheap next to the cost of locking a wrong architectural choice and discovering it after you have built on top of it.</p>
-      <ol class="steps">
-        <li class="step">
-          <h3 class="step-title">Scan for an existing decision first</h3>
-          <p>Search your decision log for the nouns of the capability. If a prior decision already owns the ground, your draft is an amendment to it, not a peer.</p>
-        </li>
-        <li class="step">
-          <h3 class="step-title">Draft it, or bring raw notes</h3>
-          <p>Have a draft? Lead with what is blocked and how reversible each option is, and anchor every number to its source. Still messy? Point the probe at your rough notes and let it sharpen the thinking before you commit to a shape.</p>
-        </li>
-        <li class="step">
-          <h3 class="step-title">Ground the agents in the code</h3>
-          <p>When the doc cites function names or constants, tell each agent to verify against the actual code. A real probe caught a doc claiming a <code>3 * X</code> multiplier where the code used <code>4 * X</code>, a bug author review had read straight past.</p>
-        </li>
-        <li class="step">
-          <h3 class="step-title">Read the synthesis cold</h3>
-          <p>Write your concessions and your pushback before touching the original, then respond once with a unified summary rather than three fragments.</p>
-        </li>
-        <li class="step">
-          <h3 class="step-title">Handle what it found</h3>
-          <p>Load-bearing gaps become a v2 doc. A thin result gets escalated, not re-probed. Before a paid dependency, scan for a shape-similar prior decision whose constraint should carry over.</p>
-        </li>
-      </ol>
-      <p class="loop-when">Probe when a decision changes a schema, a money flow, a cross-system contract, or locks a dependency. Skip it for anything reversible in under a day.</p>
-    </section>
-
     <!-- Example walkthrough -->
     <section class="section" id="example">
       <h2 class="section-title">See it work</h2>
@@ -174,7 +145,7 @@
     <!-- Commands -->
     <section class="section" id="commands">
       <h2 class="section-title">Every command</h2>
-      <p class="section-lead">Run the full probe, or reach for a single lens when you already know what you want to pressure-test.</p>
+      <p class="section-lead">Run the full probe, or reach for a single lens when you already know what you want to examine.</p>
       <div class="cmd-list">
         <div class="cmd-row"><code>/probe:go</code><span>Launch all six lenses in parallel and synthesize the findings</span></div>
         <div class="cmd-row"><code>/probe:clarify</code><span>Clarify thinking and trace the origin of ideas</span></div>
@@ -187,18 +158,21 @@
       </div>
     </section>
 
-  </main>
+    <!-- Closing CTA: funnel to the marketplace -->
+    <section class="cta-final">
+      <h2 class="cta-title">Add Probe to Claude Code</h2>
+      <p class="cta-sub">Two commands in your terminal, then run <code>/probe:go</code> on your next idea.</p>
+      <div class="cta-box">
+        <pre class="code-block"><code id="plugin2-output">/plugin marketplace add ds1/probe
+/plugin install probe@schmitz</code></pre>
+        <button class="copy-btn" data-target="plugin2" title="Copy to clipboard">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
+          <span class="copy-label">Copy</span>
+        </button>
+      </div>
+    </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p class="contribute">Have an idea for a new lens or an improvement? <a href="https://github.com/ds1/probe/issues" target="_blank" rel="noopener">Open an issue</a> or <a href="https://github.com/ds1/probe/pulls" target="_blank" rel="noopener">submit a pull request</a>.</p>
-      <p>
-        Built on <a href="https://github.com/ds1/probe" target="_blank" rel="noopener">ds1/probe</a>
-        &middot;
-        Companion to <a href="https://boilerplate.md" target="_blank" rel="noopener">boilerplate.md</a>
-      </p>
-    </div>
-  </footer>
+  </main>
 
   <script src="js/app.js"></script>
 </body>
