@@ -1,7 +1,7 @@
 # probe.md
 
-The landing page for [Socratic Probes](https://github.com/ds1/socratic-probes),
-a set of six-lens Socratic analysis commands for Claude Code. Live at
+The landing page for [Probe](https://github.com/ds1/socratic-probes), a set of
+six-lens critical-analysis commands for Claude Code. Live at
 [probe.md](https://probe.md).
 
 A static site (plain HTML, CSS, and vanilla JS), no build step. Companion to
