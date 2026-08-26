@@ -82,13 +82,13 @@
     <!-- Run -->
     <section class="run-section">
       <div class="run-cmd">
-        <code id="run-output">/probe:go &lt;input&gt; &lt;output-directory&gt;</code>
+        <code id="run-output">/probe:go &lt;input&gt; [output-directory]
         <button class="copy-btn" data-target="run" title="Copy to clipboard">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1"/><path d="M5 11H3.5A1.5 1.5 0 012 9.5v-7A1.5 1.5 0 013.5 1h7A1.5 1.5 0 0112 2.5V5"/></svg>
           <span class="copy-label">Copy</span>
         </button>
       </div>
-      <p class="run-desc">Six agents read your document, each applies one lens, and a seventh step consolidates everything into <code>probe-synthesis.md</code>: an executive verdict, an assumption risk matrix, the alternatives the doc skipped, and a validate-before-proceeding checklist.</p>
+      <p class="run-desc">The input can be a file path or pasted text, and the output directory is optional (defaults to <code>./probe-output/</code>). Six agents read your input, each applies one lens, and a seventh step consolidates everything into <code>probe-synthesis.md</code>: an executive verdict, an assumption risk matrix, the alternatives the doc skipped, and a validate-before-proceeding checklist.</p>
     </section>
 
     <!-- The six lenses -->
