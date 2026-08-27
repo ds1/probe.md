@@ -1,4 +1,4 @@
-// PROBE.md landing page interactions: install-tab switching + copy buttons.
+// probe.md landing page interactions: install-tab switching + copy buttons.
 (function () {
   'use strict';
 

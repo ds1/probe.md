@@ -238,6 +238,18 @@ button {
 }
 .run-cmd .copy-btn { flex-shrink: 0; }
 
+/* Multi-line variant: the two-command plugin install, in the run-cmd box. */
+.run-cmd-multi { align-items: flex-start; }
+.run-cmd-multi code { white-space: pre; }
+
+/* Plugin install tab wrapper: pads the run-cmd box inside the output panel. */
+.install-plugin {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+}
+
 .run-desc {
   color: var(--text-secondary);
   font-size: 0.9rem;
@@ -382,22 +394,10 @@ button {
 .cta-sub code { color: var(--accent); }
 
 .cta-box {
-  display: flex;
-  align-items: stretch;
-  gap: 10px;
   max-width: 520px;
   margin: 20px auto 0;
   text-align: left;
 }
-
-.cta-box .code-block {
-  flex: 1;
-  min-width: 0;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-}
-
-.cta-box .copy-btn { flex-shrink: 0; align-self: flex-start; }
 
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media (max-width: 640px) {
